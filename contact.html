@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Flower Shop</title>
+
+        <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  
+
+    <style>
+       
+    /* Custom Styles */
+    .navbar-flower {
+      background-color: #fff0f5; /* Soft blush pink */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    
+    .navbar-brand {
+      font-weight: 700;
+      color: #d63384 !important;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: #555 !important;
+      font-weight: 500;
+      margin: 0 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #d63384 !important;
+    }
+
+        .btn-search {
+       color: #d63384;;
+       border: none;
+       
+}
+       
+
+    .btn-search:hover {
+      background-color: #b8256f;
+      color: #fff;
+    }
+
+    .icon-btn {
+      color: #d63384;
+      font-size: 1.2rem;
+      position: relative;
+    }
+
+    .icon-badge {
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      background-color: #d63384;
+      color: white;
+      font-size: 0.65rem;
+      padding: 2px 5px;
+      border-radius: 50%;
+    }
+
+
+   .contact-title {
+            color: #6a1b9a;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-text {
+            text-align: center;
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(106, 27, 154, 0.12);
+            height: 100%;
+        }
+
+        .contact-box h4 {
+            color: #6a1b9a;
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            color: #555;
+            margin-bottom: 22px;
+            line-height: 1.7;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            margin-bottom: 18px;
+            padding: 12px;
+        }
+
+        .btn-purple {
+            background-color: #6a1b9a;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 25px;
+        }
+
+        .btn-purple:hover {
+            background-color: #4a126d;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 35px 15px;
+            }
+
+            .contact-box {
+                padding: 22px;
+            }
+        }
+
+.flower-footer {
+    background-color: #800080;
+    color: white;
+    padding: 35px 0 20px;
+}
+
+.flower-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.flower-footer a:hover {
+    color: #ffd6f5;
+}
+
+.flower-footer hr {
+    border-color: #ffffff70;
+
+}
+ </style>
+</head>
+<body>
+
+  <!-- Flower Shop Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-flower sticky-top py-3">
+    <div class="container">
+      
+      <!-- Brand Logo / Name -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-flower1"></i> Bloom & Blossom
+      </a>
+
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#flowerNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links & Search -->
+      <div class="collapse navbar-collapse" id="flowerNavbar">
+        
+        <!-- Navigation Links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+               <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="shop.html">Shop</a>
+                         </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="about.html">About </a>
+                                </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact </a>
+                                          </li>
+                                      </ul>
+
+
+
+       <!-- Search Bar -->
+        <form class="d-flex me-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-1" type="search" placeholder="Search flowers..." aria-label="Search">
+          <button class="btn btn-search" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <!-- Right Side Icons (Wishlist & Cart) -->
+        <div class="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+          <a href="#" class="icon-btn" title="Wishlist">
+            <i class="bi bi-heart"></i>
+          </a>
+          <a href="#" class="icon-btn ms-2" title="Cart">
+            <i class="bi bi-bag"></i>
+            <span class="icon-badge">2</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+<br>
+
+<section class="contact-section">
+    <div class="container">
+
+        <h2 class="contact-title">Contact Us </h2>
+
+        <p class="contact-text">
+            We'd love to hear from you! Let us make your moments beautiful.
+        </p>
+
+        <div class="row">
+
+            <!-- Contact Information -->
+            <div class="col-md-5 mb-4">
+                <div class="contact-box contact-info">
+
+                    <h4>Get In Touch 💜</h4>
+
+                    <p>
+                        📍 <strong>Address</strong><br>
+                        Flower Shop, Maharashtra, India
+                    </p>
+
+                    <p>
+                        📞 <strong>Phone</strong><br>
+                        +91 9876543210
+                    </p>
+
+                    <p>
+                        ✉️ <strong>Email</strong><br>
+                        flowershop@example.com
+                    </p>
+
+                    <p>
+                        🌷 <strong>Opening Hours</strong><br>
+                        Monday - Saturday<br>
+                        9:00 AM - 8:00 PM
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-7 mb-4">
+                <div class="contact-box">
+
+                    <h4>Send Us a Message</h4>
+
+                    <form>
+                        <input type="text" class="form-control"
+                            placeholder="Your Name" required>
+
+                        <input type="email" class="form-control"
+                            placeholder="Your Email" required>
+
+                        <input type="text" class="form-control"
+                            placeholder="Subject" required>
+
+                        <textarea class="form-control" rows="5"
+                            placeholder="Your Message" required></textarea>
+
+                        <button type="submit" class="btn btn-purple">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="flower-footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <h4>🌸 Flower Shop</h4>
+                <p>Fresh flowers for every special moment.</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5>Quick Links</h5>
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About Us</a><br>
+                <a href="shop.html">Shop</a><br>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <p>Email: flowershop@gmail.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+
+        </div>
+
+        <hr>
+        <p class="text-center mb-0">
+            © 2026 Flower Shop | All Rights Reserved
+        </p>
+    </div>
+
+</footer>
+</body>

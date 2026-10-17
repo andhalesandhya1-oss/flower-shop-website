@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Flower Shop</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+    <style>
+      /* Custom Styles */
+      .navbar-flower {
+        background-color: #fff0f5;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+      
+      .navbar-brand {
+        font-weight: 700;
+        color: #d63384 !important;
+        font-size: 1.5rem;
+      }
+
+      .nav-link {
+        color: #555 !important;
+        font-weight: 500;
+        margin: 0 18px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-link:hover, .nav-link.active {
+        color: #d63384 !important;
+      }
+
+      .btn-search {
+        background-color: #d63384;
+        color: #fff;
+        border: none;
+      }
+
+      .btn-search:hover {
+        background-color: #b8256f;
+        color: #fff;
+      }
+
+      .icon-btn {
+        color: #d63384;
+        font-size: 1.2rem;
+        position: relative;
+      }
+
+      .icon-badge {
+        position: absolute;
+        top: -5px;
+        right: -8px;
+        background-color: #d63384;
+        color: white;
+        font-size: 0.65rem;
+        padding: 2px 5px;
+        border-radius: 50%;
+      }
+
+      .small-heading {
+        color: #843bb0;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      /* Our Story */
+      .story-section {
+        padding: 65px 0;
+      }
+
+      .story-img {
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+
+      .story-section h2 {
+        font-size: 35px;
+        font-weight: bold;
+        margin: 12px 0;
+      }
+
+      .story-section p {
+        color: #555;
+        line-height: 1.9;
+      }
+
+      /* Purple Button */
+      .btn-purple {
+        background: #7228a0;
+        color: white;
+        border-radius: 30px;
+        padding: 12px 25px;
+        border: none;
+      }
+
+      .btn-purple:hover {
+        background: #4b1d69;
+        color: white;
+      }
+
+      /* Features */
+      .feature-box {
+        padding: 22px 18px;
+        margin-bottom: 15px;
+        background: #fbf6ff;
+        border-radius: 12px;
+        height: 100%;
+        transition: 0.3s;
+      }
+
+      .feature-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 18px #e4d2f0;
+      }
+
+      .feature-box i {
+        font-size: 32px;
+        color: #843bb0;
+      }
+
+      .feature-box h5 {
+        margin-top: 12px;
+        font-weight: bold;
+      }
+
+      /* Statistics */
+      .stats-section {
+        background: #f5e9fc;
+        padding: 45px 0;
+        text-align: center;
+      }
+
+      .stats-box {
+        padding: 20px 10px;
+      }
+
+      .stats-box i {
+        font-size: 35px;
+        color: #843bb0;
+      }
+
+      .stats-box h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+         
+      .flower-footer {
+        background-color: #800080;
+        color: white;
+        padding: 35px 0 20px;
+      }
+
+      .flower-footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .flower-footer a:hover {
+        color: #ffd6f5;
+      }
+
+      .flower-footer hr {
+        border-color: #ffffff70;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 12px 5%;
+        }
+
+        .navbar-nav .nav-link {
+          margin-left: 0;
+        }
+
+        .story-section {
+          padding: 40px 0;
+        }
+
+        .story-img {
+          height: 280px;
+          margin-bottom: 25px;
+        }
+
+        .story-section h2 {
+          font-size: 29px;
+        }
+
+        .stats-box h3 {
+          font-size: 25px;
+        }
+      }
+    </style>
+</head>
+<body>
+
+  <!-- Flower Shop Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-flower sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-flower1"></i> Bloom & Blossom
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#flowerNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="flowerNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <form class="d-flex me-lg-3 my-2 my-lg-0" role="search">
+          <input class="form-control me-1" type="search" placeholder="Search flowers..." aria-label="Search">
+          <button class="btn btn-search" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+
+        <div class="d-flex align-items-center gap-3 mt-2 mt-lg-0">
+          <a href="#" class="icon-btn" title="Wishlist">
+            <i class="bi bi-heart"></i>
+          </a>
+          <a href="#" class="icon-btn ms-2" title="Cart">
+            <i class="bi bi-bag"></i>
+            <span class="icon-badge">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Our Story -->
+  <section class="story-section">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-5">
+                  <img class="story-img"
+                  src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9"
+                  alt="Flower shop">
+              </div>
+              <div class="col-lg-7">
+                  <span class="small-heading">OUR STORY</span>
+                  <h2>Blooming Happiness Since Day One</h2>
+                  <p>
+                      Welcome to our Flower Shop! We believe flowers
+                      make every moment special. From birthdays to
+                      anniversaries, we help you express your feelings
+                      with fresh and beautiful blooms.
+                  </p>
+                  <p>
+                      Our mission is to bring joy, freshness and
+                      happiness to every home, one bouquet at a time.
+                  </p>
+                  <a href="shop.html" class="btn btn-purple">
+                      Explore Our Shop →
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5">
+      <div class="container">
+          <div class="text-center mb-4">
+              <span class="small-heading">WHY CHOOSE US</span>
+              <h2 class="font-weight-bold mt-2">What Makes Us Special?</h2>
+          </div>
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <div class="feature-box text-center">
+                      <i class="bi bi-flower1"></i>
+                      <h5>Fresh & Natural</h5>
+                      <p>Fresh flowers selected with care for your special moments.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <div class="feature-box text-center">
+                      <i class="bi bi-heart"></i>
+                      <h5>Handcrafted Bouquets</h5>
+                      <p>Beautiful bouquets arranged with love and creativity.</p>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <div class="feature-box text-center">
+                      <i class="bi bi-truck"></i>
+                      <h5>On-Time Delivery</h5>
+                      <p>We help your flowers reach your loved ones on time.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-6 col-md-3 stats-box">
+                  <i class="bi bi-flower2"></i>
+                  <h3>500+</h3>
+                  <p>Flower Varieties</p>
+              </div>
+              <div class="col-6 col-md-3 stats-box">
+                  <i class="bi bi-emoji-smile"></i>
+                  <h3>1000+</h3>
+                  <p>Happy Customers</p>
+              </div>
+              <div class="col-6 col-md-3 stats-box">
+                  <i class="bi bi-shop"></i>
+                  <h3>3+</h3>
+                  <p>Years of Experience</p>
+              </div>
+              <div class="col-6 col-md-3 stats-box">
+                  <i class="bi bi-heart"></i>
+                  <h3>100%</h3>
+                  <p>Customer Care</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="flower-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <h4>🌸 Flower Shop</h4>
+                  <p>Fresh flowers for every special moment.</p>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <h5>Quick Links</h5>
+                  <a href="index.html">Home</a><br>
+                  <a href="about.html">About Us</a><br>
+                  <a href="shop.html">Shop</a><br>
+                  <a href="contact.html">Contact</a>
+              </div>
+              <div class="col-md-4 mb-3">
+                  <h5>Contact Us</h5>
+                  <p>Email: flowershop@gmail.com</p>
+                  <p>Phone: +91 9876543210</p>
+              </div>
+          </div>
+          <hr>
+          <p class="text-center mb-0">
+              © 2026 Flower Shop | All Rights Reserved
+          </p>
+      </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
